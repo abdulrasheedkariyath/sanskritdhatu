@@ -1,0 +1,107 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0a192f; /* Dark blue */
+    color: #ffffff; /* White */
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #112240; /* Slightly lighter dark blue */
+    padding: 20px;
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #233554; /* Darker blue */
+    text-align: left;
+}
+
+th {
+    background-color: #112240; /* Slightly lighter dark blue */
+}
+
+a {
+    color: #64ffda; /* Teal */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    /* Adjust table for smaller screens */
+    table {
+        font-size: 14px; /* Smaller font size */
+    }
+
+    th, td {
+        padding: 8px; /* Smaller padding */
+    }
+
+    header h1 {
+        font-size: 24px; /* Smaller header font size */
+    }
+}
+
+@media (max-width: 480px) {
+    /* Adjust for mobile screens */
+    table {
+        font-size: 12px; /* Even smaller font size */
+    }
+
+    th, td {
+        padding: 6px; /* Even smaller padding */
+    }
+
+    header h1 {
+        font-size: 20px; /* Smaller header font size */
+    }
+
+    /* Stack table rows for better readability */
+    table, thead, tbody, th, td, tr {
+        display: block;
+    }
+
+    /* Hide table headers */
+    thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+    tr {
+        border: 1px solid #233554; /* Add border to rows */
+        margin-bottom: 10px; /* Add space between rows */
+    }
+
+    td {
+        border: none;
+        position: relative;
+        padding-left: 50%; /* Add space for labels */
+    }
+
+    /* Add labels for each cell */
+    td:before {
+        position: absolute;
+        left: 10px;
+        width: 45%;
+        padding-right: 10px;
+        white-space: nowrap;
+        content: attr(data-label); /* Use data-label attribute for labels */
+    }
+}

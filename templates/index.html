@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sanskrit Root Word Analysis</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Sanskrit Root Word Analysis</h1>
+    </header>
+    <main>
+        <h2>1. लट्(वर्तमान)</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>आत्मनेपदी</th>
+                    <th>एकवचनम्</th>
+                    <th>द्विवचनम्</th>
+                    <th>बहुवचनम्</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>प्रथमपुरुषः</td>
+                    <td><a href="{{ url_for('prakriya', dhatu='edhate') }}">एधते</a></td>
+                    <td><a href="{{ url_for('prakriya', dhatu='ethete') }}">एधेते</a></td>
+                    <td><a href="{{ url_for('prakriya', dhatu='edhante') }}">एधन्ते</a></td>
+                </tr>
+                <!-- Add more rows for other Dhatus -->
+            </tbody>
+            <tbody>
+                <tr>
+                    <td>मध्यमपुरुषः</td>
+                   <td><a href="{{ url_for('prakriya', dhatu='edhate') }}">एधसे</a></td>
+                   <td><a href="{{ url_for('prakriya', dhatu='edhate') }}">एधेथे</a></td>
+                    <td><a href="{{ url_for('prakriya', dhatu='edhate') }}">एधध्वे</a></td>
+                </tr>
+                <!-- Add more rows for other Dhatus -->
+            </tbody>
+            <tbody>
+                <tr>
+                    <td>उत्तमपुरुषः</td>
+                    <td><a href="{{ url_for('prakriya', dhatu='edhate') }}">एधे</a></td>
+                   <td><a href="{{ url_for('prakriya', dhatu='edhate') }}">एधावहे</a></td>
+                    <td><a href="{{ url_for('prakriya', dhatu='edhate') }}">एधामहे</a></td>
+                </tr>
+                <!-- Add more rows for other Dhatus -->
+            </tbody>
+        </table>
+    </main>
+ <main>
+        <h2>2. लिट् (परोक्ष)</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>आत्मनेपदी</th>
+                    <th>एकवचनम्</th>
+                    <th>द्विवचनम्</th>
+                    <th>बहुवचनम्</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>प्रथमपुरुषः</td>
+                    <td><a href="{{ url_for('prakriya', dhatu='edhate') }}">एधाञ्चक्रे</a></td>
+                    <td><a href="{{ url_for('prakriya', dhatu='edhate') }}">एधाञ्चक्राते</a></td>
+                    <td><a href="{{ url_for('prakriya', dhatu='edhate') }}">एधाञ्चक्रिरे</a></td>
+                </tr>
+                <!-- Add more rows for other Dhatus -->
+            </tbody>
+            <tbody>
+                <tr>
+                    <td>मध्यमपुरुषः</td>
+                   <td><a href="{{ url_for('prakriya', dhatu='edhate') }}">एधाञ्चकृषे</a></td>
+                   <td><a href="{{ url_for('prakriya', dhatu='edhate') }}">एधाञ्चक्राथे</a></td>
+                    <td><a href="{{ url_for('prakriya', dhatu='edhate') }}">एधाञ्चकृढ्वे</a></td>
+                </tr>
+                <!-- Add more rows for other Dhatus -->
+            </tbody>
+            <tbody>
+                <tr>
+                    <td>उत्तमपुरुषः</td>
+                    <td><a href="{{ url_for('prakriya', dhatu='edhate') }}">एधाञ्चक्रे</a></td>
+                   <td><a href="{{ url_for('prakriya', dhatu='edhate') }}">एधाञ्चकृवहे</a></td>
+                    <td><a href="{{ url_for('prakriya', dhatu='edhate') }}">एधाञ्चकृमहे</a></td>
+                </tr>
+                <!-- Add more rows for other Dhatus -->
+            </tbody>
+        </table>
+    </main>
+<footer>
+    <p>&copy; 2023 Sanskrit Root Word Analysis. All rights reserved.</p>
+</footer>
+</body>
+</html>
